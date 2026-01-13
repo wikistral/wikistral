@@ -2,7 +2,9 @@
     <img src="./src/app/logo.png" alt="Wikistral Logo" />
 </div>
 
-An AI encyclopedia. Powered by Mistral models. An open source alternative to Grokipedia.
+# Wikistral
+
+> An AI encyclopedia. Powered by Mistral models. An open source alternative to Grokipedia.
 
 ## Installation
 

@@ -123,3 +123,172 @@
     @apply bg-background text-foreground;
   }
 }
+
+.article-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.article {
+  background: var(--card);
+  border-radius: var(--radius-lg);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+.article-header {
+  padding: 2rem;
+  border-bottom: 1px solid var(--border);
+}
+
+.article-header h1 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin: 0;
+  line-height: 1.2;
+}
+
+.article-layout {
+  display: grid;
+  grid-template-columns: 300px 1fr;
+  gap: 2rem;
+  padding: 2rem;
+}
+
+.infobox {
+  background: var(--muted);
+  border-radius: var(--radius-md);
+  padding: 1rem;
+  height: fit-content;
+  position: sticky;
+  top: 2rem;
+}
+
+.infobox table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.875rem;
+}
+
+.infobox-title {
+  font-weight: 600;
+  font-size: 1rem;
+  padding: 0.5rem 0;
+  text-align: center;
+  caption-side: top;
+}
+
+.infobox tr {
+  border-bottom: 1px solid var(--border);
+}
+
+.infobox tr:last-child {
+  border-bottom: none;
+}
+
+.infobox-label {
+  padding: 0.5rem;
+  font-weight: 500;
+  color: var(--muted-foreground);
+  vertical-align: top;
+  width: 40%;
+}
+
+.infobox-value {
+  padding: 0.5rem;
+  font-weight: 400;
+}
+
+.article-content {
+  line-height: 1.75;
+}
+
+.markdown-body {
+  font-size: 1rem;
+}
+
+.markdown-body h2 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 1px solid var(--border);
+}
+
+.markdown-body h3 {
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin-top: 1.5rem;
+  margin-bottom: 0.75rem;
+}
+
+.markdown-body p {
+  margin-bottom: 1rem;
+}
+
+.markdown-body strong {
+  font-weight: 600;
+}
+
+.markdown-body em {
+  font-style: italic;
+}
+
+.markdown-body .citation {
+  font-size: 0.75rem;
+  vertical-align: super;
+  color: var(--primary);
+}
+
+.references {
+  margin-top: 3rem;
+  padding-top: 2rem;
+  border-top: 1px solid var(--border);
+}
+
+.references h2 {
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+.references ol {
+  padding-left: 1.5rem;
+  margin: 0;
+}
+
+.references li {
+  margin-bottom: 0.5rem;
+  font-size: 0.875rem;
+  color: var(--muted-foreground);
+}
+
+.references a {
+  color: var(--primary);
+  text-decoration: none;
+}
+
+.references a:hover {
+  text-decoration: underline;
+}
+
+.ref-domain {
+  color: var(--muted-foreground);
+  font-size: 0.75rem;
+}
+
+@media (max-width: 768px) {
+  .article-layout {
+    grid-template-columns: 1fr;
+  }
+
+  .infobox {
+    position: static;
+  }
+
+  .article-header h1 {
+    font-size: 1.75rem;
+  }
+}
